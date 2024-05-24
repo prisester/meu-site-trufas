@@ -1,0 +1,146 @@
+<!-- Exemplo de personalização -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Trufas Deliciosas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .truffle-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .truffle-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 10px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .truffle-item img {
+            max-width: 100%;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Venda de Trufas Deliciosas</h1>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#trufas">Trufas</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Bem-vindo à nossa loja de trufas! Oferecemos trufas artesanais feitas com os melhores ingredientes. Nossas trufas são perfeitas para qualquer ocasião, seja para presentear ou para se deliciar.</p>
+    </section>
+
+    <section id="trufas" class="truffle-gallery">
+        <h2>Nossas Trufas</h2>
+        <div class="truffle-item">
+            <img src="https://via.placeholder.com/300" alt="Trufa de Chocolate">
+            <h3>Trufa de Chocolate</h3>
+            <p>Deliciosa trufa de chocolate ao leite.</p>
+        </div>
+        <div class="truffle-item">
+            <img src="https://via.placeholder.com/300" alt="Trufa de Morango">
+            <h3>Trufa de Morango</h3>
+            <p>Trufa com recheio cremoso de morango.</p>
+        </div>
+        <div class="truffle-item">
+            <img src="https://via.placeholder.com/300" alt="Trufa de Maracujá">
+            <h3>Trufa de Maracujá</h3>
+            <p>Trufa exótica com recheio de maracujá.</p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Venda de Trufas. Todos os direitos reservados.</p>
+    <p>Siga-nos nas redes sociais: 
+        <a href="#" style="color:white;">Instagram</a> | 
+        <a href="#" style="color:white;">Facebook</a> | 
+        <a href="#" style="color:white;">Twitter</a>
+    </p>
+</footer>
+
+</body>
+</html>
